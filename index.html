@@ -1,0 +1,201 @@
+Here’s a simple HTML layout for "Jamie Man" as a music artist using Flexbox for alignment. This code includes a header, a navigation menu, a main content area, an "About Us" section, and a contact form, with responsive design:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jamie Man - Music Artist</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #1a1a1a;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 30px 10px;
+        }
+
+        .content {
+            width: 80%;
+            max-width: 1200px;
+        }
+
+        .about {
+            background-color: #fff;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form {
+            background-color: #fff;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .form-group button {
+            padding: 10px 15px;
+            background-color: #1a1a1a;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .form-group button:hover {
+            background-color: #333;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1a1a1a;
+            color: white;
+            margin-top: 30px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            main {
+                padding: 20px;
+            }
+
+            .content {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Jamie Man - Music Artist</h1>
+        <p>Welcome to the official site of Jamie Man</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="content" id="home">
+            <h2>Latest Music & Events</h2>
+            <p>Stay tuned for upcoming releases and live events by Jamie Man. You can find all the latest tracks, albums, and concert dates here.</p>
+        </section>
+
+        <section class="content about" id="about">
+            <h2>About Jamie Man</h2>
+            <p>Jamie Man is a talented music artist with a unique style blending various genres. Known for his heartfelt lyrics and captivating performances, Jamie has been gaining attention worldwide. His music tells a story of passion, love, and life experiences.</p>
+        </section>
+
+        <section class="content contact-form" id="contact">
+            <h2>Contact Jamie Man</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit">Send Message</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Jamie Man Music. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+```
+
+### Features:
+1. **Header**: Displays the artist's name and a short tagline.
+2. **Navigation Menu**: A simple horizontal menu with links that scroll to respective sections.
+3. **Main Content**: Contains a section for the latest music and events, an About Us section, and a contact form.
+4. **Flexbox Layout**: Ensures elements are centered and aligned properly, and is responsive to different screen sizes.
+5. **Responsive Design**: The navigation menu adapts to a vertical layout on smaller screens, and the content adjusts accordingly.
+   
+Feel free to modify the content and style further to suit your needs!
